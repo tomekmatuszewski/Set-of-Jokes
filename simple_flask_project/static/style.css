@@ -1,0 +1,27 @@
+
+.jokes_set .jokes
+{
+    border: 3px dashed grey;
+    padding: 10px;
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.jokes_set .jokes .setup
+{
+    font-weight: bold;
+}
+
+.jokes_set #punchline
+{
+    color: #EC50D2;
+    display: none;
+}
+
+
+.jokes_set #link
+{
+    color: #EC50D2;
+    text-decoration: none;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Jokes</title>
+</head>
+<body>
+
+    <h3>Set of jokes: </h3>
+    <div class="jokes_set">
+        {% for joke in jokes %}
+            <div class="jokes">
+                <p class="setup">{{ joke.setup }}</p>
+                <a id="link" class="punchline-link-{{ joke.id }}" href="#" onclick="ShowPunchline({{ joke.id }});return false;">
+                    <p>Show punchline..</p>
+                </a>
+                <p id="punchline" class="punchline-{{ joke.id }}">{{ joke.punchline }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+<script type="text/javascript" src="static/jokes.js"></script>
+</body>
+</html>
